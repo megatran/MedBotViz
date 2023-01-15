@@ -1,5 +1,32 @@
 {
   "dependencies": {
+    "com.microsoft.azure.spatial-anchors-sdk.core": {
+      "version": "file:MixedReality/com.microsoft.azure.spatial-anchors-sdk.core-2.13.3.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.subsystemregistration": "1.0.6",
+        "com.unity.xr.arsubsystems": "4.0.8",
+        "com.unity.xr.arfoundation": "4.0.12"
+      }
+    },
+    "com.microsoft.azure.spatial-anchors-sdk.ios": {
+      "version": "file:MixedReality/com.microsoft.azure.spatial-anchors-sdk.ios-2.13.3.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.xr.arkit": "4.0.12",
+        "com.microsoft.azure.spatial-anchors-sdk.core": "2.13.3"
+      }
+    },
+    "com.microsoft.azure.spatial-anchors-sdk.windows": {
+      "version": "file:MixedReality/com.microsoft.azure.spatial-anchors-sdk.windows-2.13.3.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.microsoft.azure.spatial-anchors-sdk.core": "2.13.3"
+      }
+    },
     "com.microsoft.mixedreality.openxr": {
       "version": "file:com.microsoft.mixedreality.openxr-1.5.1.tgz",
       "depth": 0,
@@ -50,6 +77,24 @@
       "dependencies": {
         "com.microsoft.mixedreality.toolkit.foundation": "2.8.2"
       }
+    },
+    "com.microsoft.mixedreality.worldlockingtools": {
+      "version": "file:MixedReality/com.microsoft.mixedreality.worldlockingtools-1.5.9.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
+    },
+    "com.microsoft.ros_mrtk_native": {
+      "version": "file:C:/Users/megatran/Downloads/com.microsoft.ros_mrtk_native-0.0.1.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
+    },
+    "com.microsoft.spatialaudio.spatializer.unity": {
+      "version": "file:MixedReality/com.microsoft.spatialaudio.spatializer.unity-2.0.37.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
     },
     "com.ptc.vuforia.engine": {
       "version": "file:com.ptc.vuforia.engine-10.12.3.tgz",
@@ -134,7 +179,7 @@
     },
     "com.unity.subsystemregistration": {
       "version": "1.1.0",
-      "depth": 3,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.subsystems": "1.0.0"
@@ -202,9 +247,19 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.xr.arkit": {
+      "version": "4.0.12",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.arsubsystems": "4.0.12",
+        "com.unity.xr.management": "4.0.1"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.xr.arsubsystems": {
       "version": "4.1.13",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.subsystemregistration": "1.1.0"

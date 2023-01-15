@@ -20,11 +20,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SampleResources/Scenes/2-ModelTargets.unity
     guid: 530386685ba085242832bd5cc78d7222
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/ros_interface.unity
+    guid: 1e591f64038971b479afc1e1a6b1dbc0
+  - enabled: 1
+    path: Assets/Scenes/ros2_interface.unity
+    guid: 0582bd6d9fdd00b4b961f33125a1d82d
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: ccfcc1c19beeb3e40b6ffecd226da296,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: dc5c9a0f453b91147b38867503c0084d,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b42fdfb4301af6441ade275a99f57c43,
       type: 2}

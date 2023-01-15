@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<robot name="medical_robot">
+  <material name="gray">
+    <color rgba="0.7 0.7 0.7 1"/>
+  </material>
+
+  <material name="yellow">
+    <color rgba="1 1 0 1"/>
+  </material>
+  <link name="cube">
+    <visual>
+      <geometry>
+        <box size="0.205 0.205 0.205"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </link>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.1 0.05"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </link>
+
+  <link name="wheel_left_front">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.04"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </link>
+
+  <link name="wheel_right_front">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.04"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </link>
+
+  <link name="wheel_left_rear">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.04"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </link>
+
+  <link name="wheel_right_rear">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.04"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </link>
+
+  <joint name="base_to_cube" type="fixed">
+    <parent link="base_link"/>
+    <child link="cube"/>
+    <origin xyz="0 0 0.12"/>
+  </joint>
+
+  <joint name="base_to_front_left_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_left_front"/>
+    <origin xyz="0.07 0.07 -0.05" rpy="1.57 0 0"/>
+  </joint>
+
+  <joint name="base_to_front_right_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_right_front"/>
+    <origin xyz="0.07 -0.07 -0.05" rpy="1.57 0 0"/>
+  </joint>
+
+  <joint name="base_to_rear_left_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_left_rear"/>
+    <origin xyz="-0.07 0.07 -0.05" rpy="1.57 0 0"/>
+  </joint>
+
+  <joint name="base_to_rear_right_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_right_rear"/>
+    <origin xyz="-0.07 -0.07 -0.05" rpy="1.57 0 0"/>
+  </joint>
+
+</robot>
